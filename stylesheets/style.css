@@ -1,3 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic); /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: #198FF0;
+}
+header p {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.form-city {
+  margin-top: 45px;
+}
+.form-city .label-city {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.form-city .search-city {
+  display: flex;
+}
+.form-city .search-city #searchbar {
+  height: 35px;
+  width: 180px;
+  outline: none;
+  border: 1px solid #53adf7;
+  border-radius: 8px;
+  font-size: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 5px;
+}
+.form-city .search-city .search-btn {
+  border-radius: 8px;
+  border: none;
+  width: 95px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #198FF0;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.form-city .search-city .search-btn:hover {
+  background-color: #177bcc;
+}
+
+body {
+  font-family: "Nunito";
+}
+
+.main {
+  margin: 0 120px;
+}
 
 /*# sourceMappingURL=style.css.map */

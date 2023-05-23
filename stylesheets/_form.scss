@@ -1,0 +1,42 @@
+.form-city {
+    margin-top: 45px;
+
+    .label-city {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 24px;
+        font-weight: $default-font-weight;
+    }
+
+    .search-city {
+        display: flex;
+
+        #searchbar {
+            height: 35px;
+            width: 180px;
+            outline: none;
+            border: 1px solid #53adf7;
+            border-radius: 8px;
+            font-size: $font-size-xl;
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-right: 5px;
+        }
+
+        .search-btn {
+            border-radius: 8px;
+            border: none;
+            width: 95px;
+            font-size: $font-size-xl;
+            color: $default-white;
+            background-color: #198FF0;
+            font-weight: bold;
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #177bcc;
+            }
+        }
+    }
+}
