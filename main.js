@@ -1,4 +1,4 @@
-document.querySelector('.search-btn').addEventListener('click', function(e) {
+document.querySelector('.search-btn').addEventListener('click', function (e) {
     e.preventDefault();
 
     const cityInput = document.querySelector('.search-city input');
@@ -9,7 +9,7 @@ document.querySelector('.search-btn').addEventListener('click', function(e) {
     function validateInput() {
         if (city === "") {
             alert("Campo de pesquisa vazio!");
-        } 
+        }
     }
 
     searchCity(city);
@@ -18,19 +18,19 @@ document.querySelector('.search-btn').addEventListener('click', function(e) {
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
         fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            const cityName = data.name;
-            const cityWeather = data.main.temp;
-            const icon = data.weather[0].icon;
-    
-            showData(cityName, cityWeather, icon);
-        })
-        .catch(error => {
-            alert('Não foi possível encontrar uma previsão para a cidade digitada', error);
-        });
+            .then(response => response.json())
+            .then(data => {
+                const cityName = data.name;
+                const cityWeather = data.main.temp;
+                const icon = data.weather[0].icon;
+
+                showData(cityName, cityWeather, icon);
+            })
+            .catch(error => {
+                alert('Não foi possível encontrar uma previsão para a cidade digitada', error);
+            });
     }
-    
+
     function showData(cityName, cityWeather, icon) {
         const cityDiv = document.querySelector('.city');
         const degreeDiv = document.querySelector('.degree');
@@ -38,7 +38,7 @@ document.querySelector('.search-btn').addEventListener('click', function(e) {
 
         const celsiusTemperature = cityWeather - 273.15;
         const iconUrl = `https://openweathermap.org/img/wn/${icon}.png`;
-    
+
         cityDiv.textContent = `${cityName}`
         degreeDiv.textContent = `${Math.round(celsiusTemperature)}°C`
         iconDiv.setAttribute('src', iconUrl);
