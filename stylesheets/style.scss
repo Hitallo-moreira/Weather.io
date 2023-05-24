@@ -4,6 +4,7 @@
 @import './reset';
 @import './header';
 @import './form';
+@import './footer';
 
 body {
     font-family: $default-font-family;
@@ -14,4 +15,10 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 120px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .main {
+        margin: 0;
+    }
 }
