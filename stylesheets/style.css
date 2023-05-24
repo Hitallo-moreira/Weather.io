@@ -68,15 +68,22 @@ header p {
 
 .form-city {
   margin-top: 45px;
+  height: 300px;
+  background-color: #ffffff;
+  width: 350px;
+  border-radius: 10px;
+  padding: 25px;
 }
 .form-city .label-city {
   display: block;
   margin-bottom: 8px;
   font-size: 24px;
   font-weight: 600;
+  color: #828288;
 }
 .form-city .search-city {
   display: flex;
+  padding-bottom: 30px;
 }
 .form-city .search-city #searchbar {
   height: 35px;
@@ -103,12 +110,34 @@ header p {
 .form-city .search-city .search-btn:hover {
   background-color: #177bcc;
 }
+.form-city .show-city {
+  border-top: 1px solid #EAEAEB;
+  padding-top: 20px;
+}
+.form-city .city {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #828288;
+}
+.form-city .temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-city .temperature .degree {
+  font-size: 60px;
+  font-weight: bold;
+}
 
 body {
   font-family: "Nunito";
+  background-color: #EAEAEB;
 }
 
 .main {
+  display: flex;
+  justify-content: center;
   margin: 0 120px;
 }
 
