@@ -1,16 +1,23 @@
 .form-city {
     margin-top: 45px;
+    height: 300px;
+    background-color: $default-white;
+    width: 350px;
+    border-radius: 10px;
+    padding: 25px;
 
     .label-city {
         display: block;
         margin-bottom: 8px;
-        font-size: 24px;
+        font-size: $city-font-size;
         font-weight: $default-font-weight;
+        color: $default-gray;
     }
 
     .search-city {
         display: flex;
-
+        padding-bottom: 30px;
+        
         #searchbar {
             height: 35px;
             width: 180px;
@@ -37,6 +44,29 @@
             &:hover {
                 background-color: #177bcc;
             }
+        }
+    }
+
+    .show-city {
+        border-top: 1px solid $body-background;
+        padding-top: 20px;
+    }
+
+    .city {
+        margin-bottom: 10px;
+        font-size: $city-font-size;
+        font-weight: 600;
+        color: $default-gray;
+    }
+
+    .temperature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .degree {
+            font-size: 60px;
+            font-weight: bold;
         }
     }
 }
