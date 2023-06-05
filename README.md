@@ -18,26 +18,16 @@ Aplicação Web de previsão do tempo</p>
 <h2 id="instalacao">Instalação</h2>
 
 ```
-git clone git@github.com:Hitallo-moreira/vue-rating-component.git
+Obs: Recomendável utilizar a extensão "Live Server"
 ```
 ```
-cd .\vue-rating-component\
+git clone git@github.com:Hitallo-moreira/wheter.io.git
 ```
-
-<b>2 - Instale as dependências:</b>
-
 ```
-npm install
+cd .\wheter.io\
 ```
 
-```
-npm run serve
-```
-
-<b>Após isso basta pressionar o CTRL e clicar no endereço retornado no terminal:</b>
-
-
-![image](https://i.imgur.com/Wct7SiY.png)
+<b>Após isso basta clicar com o botão direito sobre o arquivo (index.html) e abrir com live server</b>
 
 
 <h2 id="tecnologias">Tecnologias utilizadas</h2>
@@ -45,11 +35,12 @@ npm run serve
 <li>Html</li>
 <li>Css</li>
 <li>JavaScript</li>
-<li>Vue</li>
 <li>Sass</li>
+<li>API da OpenWeatherMap</li>
 </ul>
 
 <h3 id="features">Features</h3>
 
-- [x] Coleta de avaliação do usuário
+- [x] Temperatura em tempo real
+- [x] Tradução
 
