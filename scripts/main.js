@@ -6,9 +6,10 @@ document.querySelector('.search-btn').addEventListener('click', function(e) {
 
     validateInput();
 
-    function validateInput() {
+    function validateInput(e) {
         if (city === "") {
             alert("Campo de pesquisa vazio!");
+            e.preventDefault();
         } 
     }
 
