@@ -1,0 +1,21 @@
+.main.languages {
+    margin-left: auto;
+
+    .pt-br,
+    .en-us {
+        height: auto;
+        width: 40px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .pt-br {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .main.languages {
+        margin-right: 15px;
+    }
+}
