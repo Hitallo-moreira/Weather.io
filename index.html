@@ -12,12 +12,18 @@
     <header>
         <p>Wheter.io</p>
     </header>
+    <div class="main languages">
+        <img src="images/brazil.png" alt="Brazil flag" class="pt-br" onclick="changeLanguage('pt-br')">
+        <img src="images/usa.png" alt="USA flag" class="en-us" onclick="changeLanguage('en-us')">
+    </div>
     <div class="main">
         <form class="form-city">
-            <label class="label-city">Digite a cidade desejada:</label>
+            <label class="label-city translate" data-translate="Enter the desired city:">Digite a cidade desejada:</label>
             <div class="search-city">
                 <input type="text" name="searchbar" id="searchbar">
-                <input type="submit" value="Pesquisar" class="search-btn" id="search_btn">
+                <button class="search-btn">
+                    <span class="translate" data-translate="Search">Pesquisar</span>
+                </button>
             </div>
             <div class="city"></div>
             <div class="temperature">
@@ -33,7 +39,8 @@
             Coded by<a href="https://github.com/Hitallo-moreira?tab=repositories" target="_blank"> Hitallo Feitosa</a>
         </span>
     </footer>
-    <script src="config.js"></script>
-    <script src="main.js"></script>
+    <script src="./scripts/config.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/translate.js"></script>
 </body>
 </html>
