@@ -38,6 +38,7 @@
             color: $default-white;
             background-color: $default-blue;
             font-weight: bold;
+            -webkit-tap-highlight-color: transparent;
             transition: .3s;
             cursor: pointer;
 
@@ -92,7 +93,7 @@
         }
 
         .city {
-            font-size: $font-size-xl;
+            
             margin-bottom: 20px;
         }
     }

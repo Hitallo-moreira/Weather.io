@@ -11,6 +11,8 @@ footer {
         color: $default-white;
 
         a {
+            text-decoration: none;
+            
             &:active {
                 color: #2f7ebe;
             }
