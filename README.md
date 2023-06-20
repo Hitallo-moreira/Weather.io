@@ -1,4 +1,4 @@
-# <h1 align="center">Wheter.io</h1>
+# <h1 align="center">Weather.io</h1>
 <p align="center">
 Aplicação Web de previsão do tempo</p>
 
