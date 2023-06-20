@@ -9,11 +9,11 @@ Aplicação Web de previsão do tempo</p>
   <a href="#features">Features</a>
 </p>
 <h4 align="center">
-	Acesse em: <a href="https://wheterio.netlify.app/" target="_blank">Wheter.io</a>
+	Acesse em: <a href="https://wheterio.netlify.app/" target="_blank">Weather.io</a>
 </h4>
 
 <h2 id="sobre">Sobre</h2>
-<p>Seja seu próprio meteorologista e veja informações climáticas em tempo real com Wheter.io</p>
+<p>Seja seu próprio meteorologista e veja informações climáticas em tempo real com Weather.io</p>
 
 <h2 id="instalacao">Instalação</h2>
 
@@ -21,10 +21,10 @@ Aplicação Web de previsão do tempo</p>
 Obs: Recomendável utilizar a extensão "Live Server"
 ```
 ```
-git clone git@github.com:Hitallo-moreira/wheter.io.git
+git clone git@github.com:Hitallo-moreira/weather.io.git
 ```
 ```
-cd .\wheter.io\
+cd .\weather.io\
 ```
 
 <b>Após isso basta clicar com o botão direito sobre o arquivo (index.html) e abrir com live server</b>
