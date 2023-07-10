@@ -1,5 +1,6 @@
-.main.languages {
-    margin-left: auto;
+.languages {
+    display: flex;
+    justify-content: flex-end;
 
     .pt-br,
     .en-us {

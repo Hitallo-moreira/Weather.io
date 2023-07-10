@@ -1,17 +1,21 @@
+.info {
+    flex-direction: column;
+}
+
 .form-city {
-    margin: 45px 0px 45px 0px;
-    height: 300px;
-    background-color: $default-white;
-    width: 350px;
-    border-radius: 10px;
     padding: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
     .label-city {
         display: block;
         margin-bottom: 8px;
         font-size: $city-font-size;
         font-weight: $default-font-weight;
-        color: $default-gray;
+        color: $default-white;
     }
 
     .search-city { 
@@ -19,11 +23,11 @@
         padding-bottom: 30px;
         
         #searchbar {
-            height: 35px;
-            width: 180px;
+            height: 40px;
+            width: 250px;
             outline: none;
-            border: 1px solid #53adf7;
-            border-radius: 8px;
+            border: none;
+            border-radius: 5px;
             font-size: $font-size-xl;
             padding-left: 8px;
             padding-right: 8px;
@@ -31,9 +35,12 @@
         }
 
         .search-btn {
-            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
             border: none;
-            width: 95px;
+            width: 100px;
             font-size: $font-size-xl;
             color: $default-white;
             background-color: $default-blue;
@@ -49,7 +56,7 @@
     }
 
     .show-city {
-        border-top: 1px solid $body-background;
+        border-top: 1px solid $default-gray;
         padding-top: 20px;
     }
 
@@ -57,7 +64,7 @@
         margin-bottom: 10px;
         font-size: $city-font-size;
         font-weight: 600;
-        color: $default-gray;
+        color: $default-white;
     }
 
     .temperature {
@@ -68,14 +75,18 @@
         .degree {
             font-size: 60px;
             font-weight: bold;
+            color: $default-white;
         }
     }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .info {
+        width: 90%;
+    }
+
     .form-city {
-        width: 80%;
-        padding: 20px;
+        padding: 20px 12px 20px 12px;
         margin: 30px 0px 30px 0px;
 
         .label-city {

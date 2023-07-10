@@ -68,7 +68,6 @@ header {
   align-items: center;
   height: 80px;
   width: 100%;
-  background-color: #198FF0;
 }
 header p {
   color: #ffffff;
@@ -78,23 +77,24 @@ header p {
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   header {
-    height: 50px;
+    height: 60px;
   }
   header p {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
-.main.languages {
-  margin-left: auto;
+.languages {
+  display: flex;
+  justify-content: flex-end;
 }
-.main.languages .pt-br,
-.main.languages .en-us {
+.languages .pt-br,
+.languages .en-us {
   height: auto;
   width: 40px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-.main.languages .pt-br {
+.languages .pt-br {
   margin-right: 10px;
 }
 
@@ -103,40 +103,47 @@ header p {
     margin-right: 15px;
   }
 }
+.info {
+  flex-direction: column;
+}
+
 .form-city {
-  margin: 45px 0px 45px 0px;
-  height: 300px;
-  background-color: #ffffff;
-  width: 350px;
-  border-radius: 10px;
   padding: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 .form-city .label-city {
   display: block;
   margin-bottom: 8px;
   font-size: 24px;
   font-weight: 600;
-  color: #828288;
+  color: #ffffff;
 }
 .form-city .search-city {
   display: flex;
   padding-bottom: 30px;
 }
 .form-city .search-city #searchbar {
-  height: 35px;
-  width: 180px;
+  height: 40px;
+  width: 250px;
   outline: none;
-  border: 1px solid #53adf7;
-  border-radius: 8px;
+  border: none;
+  border-radius: 5px;
   font-size: 16px;
   padding-left: 8px;
   padding-right: 8px;
   margin-right: 5px;
 }
 .form-city .search-city .search-btn {
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
   border: none;
-  width: 95px;
+  width: 100px;
   font-size: 16px;
   color: #ffffff;
   background-color: #198FF0;
@@ -149,14 +156,14 @@ header p {
   background-color: #177bcc;
 }
 .form-city .show-city {
-  border-top: 1px solid #EAEAEB;
+  border-top: 1px solid #828288;
   padding-top: 20px;
 }
 .form-city .city {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 600;
-  color: #828288;
+  color: #ffffff;
 }
 .form-city .temperature {
   display: flex;
@@ -166,12 +173,15 @@ header p {
 .form-city .temperature .degree {
   font-size: 60px;
   font-weight: bold;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .info {
+    width: 90%;
+  }
   .form-city {
-    width: 80%;
-    padding: 20px;
+    padding: 20px 12px 20px 12px;
     margin: 30px 0px 30px 0px;
   }
   .form-city .label-city {
@@ -190,25 +200,31 @@ header p {
 footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: 80px;
   width: 100%;
-  background-color: #198FF0;
   margin-top: auto;
 }
 footer span {
   color: #ffffff;
 }
 footer span a {
+  margin-left: 5px;
   text-decoration: none;
+  color: #828288;
+  transition: 0.3s;
 }
 footer span a:active {
   color: #2f7ebe;
+}
+footer span a:hover {
+  color: #ccc;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   footer {
     height: 50px;
+    justify-content: center;
   }
 }
 body {
@@ -220,6 +236,15 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 120px;
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {

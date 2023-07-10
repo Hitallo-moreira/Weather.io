@@ -1,20 +1,26 @@
 footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     height: 80px;
     width: 100%;
-    background-color: $default-blue;
     margin-top: auto;
 
     span {
         color: $default-white;
 
         a {
+            margin-left: 5px;
             text-decoration: none;
+            color: $default-gray;
+            transition: .3s;
             
             &:active {
                 color: #2f7ebe;
+            }
+
+            &:hover {
+                color: #ccc;
             }
         }
     }
@@ -23,5 +29,6 @@ footer {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     footer {
         height: 50px;
+        justify-content: center;
     }
 }

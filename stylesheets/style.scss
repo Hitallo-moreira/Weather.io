@@ -18,6 +18,15 @@ body {
     margin: 0 120px;
 }
 
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .main {
         margin: 0;
