@@ -9,7 +9,7 @@ Aplicação Web de previsão do tempo</p>
   <a href="#features">Features</a>
 </p>
 <h4 align="center">
-	Acesse em: <a href="https://wheterio.netlify.app/" target="_blank">Weather.io</a>
+	Acesse em: <a href="https://hweatherio.netlify.app/" target="_blank">Weather.io</a>
 </h4>
 
 <h2 id="sobre">Sobre</h2>
